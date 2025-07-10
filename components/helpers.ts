@@ -1,3 +1,9 @@
+export const searchMovies = (query: string): Movie[] => {
+  return staticMovies.filter((movie) =>
+    movie.title.toLowerCase().includes(query.toLowerCase())
+  );
+};
+
 export const staticMovies: Movie[] = [
   {
     id: 1,

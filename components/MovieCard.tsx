@@ -1,7 +1,7 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import React from "react";
-import { Link } from "expo-router";
 import { icons } from "@/constants/icons";
+import { Link } from "expo-router";
+import React from "react";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const MovieCard = ({
   id,
@@ -22,7 +22,7 @@ const MovieCard = ({
           className="w-full h-52 rounded-lg"
           resizeMode="cover"
         />
-        <Text className="text-sm text-white font-bold mt-2">{title}</Text>
+        <Text className="text-sm text-white font-bold mt-2" numberOfLines={1}>{title}</Text>
         <View className="flex-row items-center justify-start gap-x-1">
           <Image source={icons.star} />
           <Text className="text-white text-xs font-bold ">
